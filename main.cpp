@@ -45,11 +45,24 @@ int main() {
         cin.ignore(1000, '\n');
     }
 
+    do {
+        if (pilihan < 1 || pilihan > 3) {
+            cout << "Pilihan tidak valid. Silakan coba lagi." << endl;
+            cout << "\nPilih nasi (1-3): ";
+            cin >> pilihan;
+
+            if (cin.fail()) {
+                cin.clear();
+                cin.ignore(1000, '\n');
+            }
+        }
+    } while (pilihan < 1 || pilihan > 3);
+
     switch (pilihan) {
         case 1 : tambahkanPesanan("Nasi", 1500); break;
         case 2 : tambahkanPesanan("Nasi", 1000); break;
         case 3 : tambahkanPesanan("Nasi", 0); break;
-        default: break;
+        default: cout << "Pilihan tidak valid"; break;
     }
 
     menu();

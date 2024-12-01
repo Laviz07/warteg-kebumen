@@ -8,6 +8,11 @@ struct menu {
         string jenis;
 };
 
+struct totalPesanan {
+        string nama;
+        int    harga;
+};
+
 menu menuList[] = {
     {     "Telur dadar",  1500, "Makanan",     "Telur"},
     {     "Telur bulat",  1500, "Makanan",     "Telur"},
@@ -24,9 +29,4 @@ menu menuList[] = {
     {"Air putih dingin",  1000, "Minuman", "Air putih"},
     {    "Es teh manis",  1000, "Minuman",       "Teh"},
     {       "Teh tawar",  1000, "Minuman",       "Teh"},
-};
-
-struct totalPesanan {
-        string nama;
-        int    harga;
 };
