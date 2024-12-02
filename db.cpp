@@ -1,14 +1,14 @@
 #include <string>
 using namespace std;
 
-struct menu {
+struct menu { // struct untuk menyimpan informasi menu makanan dan minuman
         string nama;
         int    harga;
         string kategori;
         string jenis;
 };
 
-struct totalPesanan {
+struct totalPesanan { // struct untuk menyimpan informasi total pesanan
         string nama;
         int    harga;
 };
